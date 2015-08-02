@@ -14,19 +14,24 @@ How to install/implement mpdb:
 (I will wrap this into a pip package soon!)
 
 To Install:
+
+
     easy_install prettytable
 
 To Use:
-    - In all 3 files set:
-        PRODUCTION = True
+
+
+- In all 3 files set:
+PRODUCTION = True
 
     - Add the following to the code you are debugging:
         from .mpdb.mpdb import *
         from .mpdb.zpdb import *
 
-    - Insert one of the following instructions into your code where you wish to create a debugging breakpoint:
+    - Insert one of the following instructions into your code where you wish
+      to create a debugging breakpoint:
 
-    Mpdb.run(locals()) <-- runs mpdb and quit resumes code execution
-        OR
-    set_trace(locals()) <-- runs mpdb and quit lauches pdb
+        Mpdb.run(locals()) <-- runs mpdb and quit resumes code execution
+            OR
+        set_trace(locals()) <-- runs mpdb and quit lauches pdb
 
