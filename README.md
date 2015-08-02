@@ -20,11 +20,11 @@ To Install:
 To Use:
 
 - In all 3 files set:
-- PRODUCTION = True
+-- PRODUCTION = True
 
 - Add the following to the code you are debugging:
-    from .mpdb.mpdb import *
-    from .mpdb.zpdb import *
+    - from .mpdb.mpdb import *
+    - from .mpdb.zpdb import *
 
 - Insert one of the following instructions into your code where you wish
   to create a debugging breakpoint:
