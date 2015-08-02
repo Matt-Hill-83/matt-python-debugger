@@ -20,7 +20,8 @@ To Install:
 To Use:
 
 - In all 3 files set:
--- PRODUCTION = True
+
+    PRODUCTION = True
 
 - Add the following to the code you are debugging:
     - from .mpdb.mpdb import *
@@ -29,7 +30,11 @@ To Use:
 - Insert one of the following instructions into your code where you wish
   to create a debugging breakpoint:
 
-    Mpdb.run(locals()) <-- runs mpdb and quit resumes code execution
+    - Mpdb.run(locals()) <-- runs mpdb and quit resumes code execution
+
+
         OR
-    set_trace(locals()) <-- runs mpdb and quit lauches pdb
+
+
+    - set_trace(locals()) <-- runs mpdb and quit lauches pdb
 
