@@ -19,9 +19,6 @@ To Install:
 
 To Use:
 
-- In all 3 files set:
-
-    PRODUCTION = True
 
 - Add the following to the code you are debugging:
     - from .mpdb.mpdb import *
